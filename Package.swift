@@ -2,22 +2,23 @@
 import PackageDescription
 
 let package = Package(
-	name: "Settings",
+	name: "MacSettingsWindow",
     defaultLocalization: "en",
 	platforms: [
 		.macOS(.v10_13)
 	],
 	products: [
 		.library(
-			name: "Settings",
+			name: "MacSettingsWindow",
 			targets: [
-				"Settings"
+				"MacSettingsWindow"
 			]
 		)
 	],
 	targets: [
 		.target(
-			name: "Settings",
+			name: "MacSettingsWindow",
+			path: "Sources/Settings",
 			resources: [
 				.process("Resources")
 			]
